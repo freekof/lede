@@ -5,9 +5,13 @@
 #
 # Copyright (C) 2020 KFERMercer
 #
-name: OpenWrt-CI
+name: OpenWrt-6
 
 on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
   schedule:
     - cron: 0 20 * * *
 
